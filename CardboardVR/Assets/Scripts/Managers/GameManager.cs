@@ -9,11 +9,11 @@ public class GameManager : MonoBehaviour
     
     IEnumerator Start ()
     {
-        VersionNumber.Initialize();
-        Config.Initialize();
+        //VersionNumber.Initialize();
+        //Config.Initialize();
 
         yield return new WaitForSeconds(0.125f);
-        Container.Load("Container").PrintString();
+        //Container.Load("Container").PrintString();
 
         sm = new StateMachine<GameManager>(new TestStateOne(this));
     }

@@ -17,10 +17,10 @@ namespace Huffy.Utilities
         void Awake()
         {
             DontDestroy();
-            if (Config.HasKey(CONFIG_KEYS.debug))
-            {
-                useUIDebug = bool.Parse(Config.Read(CONFIG_KEYS.debug));
-            }
+            //if (Config.HasKey(CONFIG_KEYS.debug))
+            //{
+            //    useUIDebug = bool.Parse(Config.Read(CONFIG_KEYS.debug));
+            //}
         }
 
         void OnEnable()
